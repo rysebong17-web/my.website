@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Little Something For You ♡</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFF9E9;
+    color: #55482F;
+    font-family: Georgia, serif;
+}
+
+header {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 19px;
+    color: #B18B39;
+    font-style: italic;
+}
+
+nav a {
+    color: #78673F;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 13px;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(#FFF9E9, #F8EDC9);
+}
+
+.small-title {
+    letter-spacing: 5px;
+    font-size: 11px;
+    color: #B18B39;
+    margin-bottom: 25px;
+}
+
+/* HIS PICTURE */
+
+.profile-photo {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border: 5px solid #E8D7A8;
+    padding: 5px;
+    border-radius: 100px 100px 15px 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(177,139,57,0.15);
+}
+
+.hero h1 {
+    font-size: clamp(38px, 8vw, 70px);
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #C6A34D;
+    font-style: italic;
+}
+
+.hero p {
+    max-width: 420px;
+    line-height: 1.9;
+    font-size: 15px;
+    color: #817451;
+}
+
+.hero button {
+    margin-top: 35px;
+    padding: 14px 30px;
+    border: 1px solid #C6A34D;
+    background: transparent;
+    color: #80672F;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+.hero button:hover {
+    background: #C6A34D;
+    color: white;
+}
+
+section {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.section-label {
+    color: #B18B39;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.message {
+    max-width: 650px;
+    margin: auto;
+    line-height: 2.1;
+    font-size: 16px;
+    color: #786C50;
+}
+
+.divider {
+    width: 55px;
+    height: 1px;
+    background: #C6A34D;
+    margin: 30px auto;
+}
+
+.note {
+    background-color: #F5EDDA;
+    padding: 75px 20px;
+}
+
+.note p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 2;
+    color: #786C50;
+}
+
+.closing {
+    padding: 100px 20px;
+}
+
+.closing h2 {
+    font-size: 40px;
+    font-style: italic;
+    color: #B18B39;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #A18B5A;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+@media(max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    nav a {
+        margin-left: 8px;
+        font-size: 11px;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 70px 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">a little something ♡</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#message">Message</a>
+        <a href="#note">A Note</a>
+    </nav>
+</header>
+
+<!-- HOME PAGE -->
+
+<div class="hero" id="home">
+
+    <div class="small-title">
+        A LITTLE NOTE FOR YOU
+    </div>
+
+    <img src="jayy.jpg"
+         alt="His Picture"
+         class="profile-photo">
+
+    <h1>
+        Something <span>special</span><br>
+        for someone special.
+    </h1>
+
+    <p>
+        I wanted to make something simple
+        but meaningful. So here's a little
+        space dedicated to you.
+    </p>
+
+    <button onclick="document.getElementById('message').scrollIntoView({behavior:'smooth'})">
+        READ MY MESSAGE ↓
+    </button>
+
+</div>
+
+<!-- MAIN MESSAGE -->
+
+<section id="message">
+
+    <div class="section-label">
+        A FEW WORDS
+    </div>
+
+    <h2>Dear You,</h2>
+
+    <div class="divider"></div>
+
+    <div class="message">
+
+        I just want you to know that I appreciate
+        you and the sincerity of your feelings.
+
+        <br><br>
+
+        I may not always know how to respond
+        to everything, but please know that
+        I don't take your kindness for granted.
+
+        <br><br>
+
+        Thank you for making me feel appreciated
+        and for being genuine with me.
+
+        <br><br>
+
+        I hope we get to know each other better
+        as time goes by. I believe that good
+        things take time, and there's no need
+        to rush anything.
+
+    </div>
+
+    <div class="divider"></div>
+
+    <p style="font-style:italic;color:#B18B39;">
+        With sincerity, ♡
+    </p>
+
+</section>
+
+<!-- A LITTLE NOTE -->
+
+<section class="note" id="note">
+
+    <div class="section-label">
+        ONE LAST THING
+    </div>
+
+    <h2>Let's Take Our Time.</h2>
+
+    <p>
+        We may not have a lot of memories
+        together yet, but I think there's
+        something nice about getting to know
+        someone little by little.
+
+        <br><br>
+
+        No expectations, no pressure.
+        Just genuine conversations,
+        little moments, and time to know
+        each other better.
+
+        <br><br>
+
+        Maybe someday, we'll look back
+        at this and smile at how everything
+        started.
+    </p>
+
+</section>
+
+<!-- CLOSING -->
+
+<section class="closing">
+
+    <div class="section-label">
+        UNTIL THEN
+    </div>
+
+    <h2>One Step at a Time.</h2>
+
+    <div class="divider"></div>
+
+    <p class="message">
+        Thank you for being here.
+        I hope this little surprise
+        made you smile. 💛
+    </p>
+
+</section>
+
+<footer>
+    MADE WITH A LITTLE THOUGHT ♡
+</footer>
+
+</body>
+</html>
